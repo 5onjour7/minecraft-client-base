@@ -1,6 +1,7 @@
 package clientbase;
 
 import clientbase.commands.CommandManager;
+import clientbase.friend.FriendManager;
 import clientbase.managers.Manager;
 import clientbase.module.ModuleManager;
 import org.apache.logging.log4j.LogManager;
@@ -25,10 +26,11 @@ public class Clientbase {
     public final List<Manager> managers = new ArrayList<>();
     public final CommandManager COMMAND_MANAGER = new CommandManager();
     public final ModuleManager MODULE_MANAGER = new ModuleManager();
+    public final FriendManager FRIEND_MANAGER = new FriendManager();
 
     public Clientbase() {
         INSTANCE = this;
-        registerAll(COMMAND_MANAGER, MODULE_MANAGER);
+        registerAll(COMMAND_MANAGER, MODULE_MANAGER, FRIEND_MANAGER);
 
         for (Manager manager : managers) {
             manager.initialize();
