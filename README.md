@@ -25,7 +25,7 @@ The Minecraft Cheat Base is designed to provide developers with an easy-to-use a
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/minecraft-cheat-base.git
+   git clone https://github.com/5onjour7/minecraft-cheat-base.git
    cd minecraft-cheat-base
    ```
 
