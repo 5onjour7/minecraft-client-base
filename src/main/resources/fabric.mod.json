@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "clientbase",
+  "version": "${version}",
+  "name": "clientbase",
+  "description": "An easy to use client base made for making cheats",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/clientbase/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "clientbase.Initializer"
+    ]
+  },
+  "mixins": [
+    "clientbase.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
